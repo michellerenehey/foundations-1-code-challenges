@@ -39,8 +39,14 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
-    
-    return {};
+    let objKeys = Object.keys(someObject); 
+    let objValues = Object.values(someObject); 
+    let newObject = {};
+    objKeys.forEach((key, i) => {
+        const newObjectKey = key.toUpperCase(); 
+        newObject[newObjectKey] = objValues[i]; 
+    }); 
+    return newObject;
 }
 
 /*
