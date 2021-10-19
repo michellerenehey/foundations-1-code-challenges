@@ -34,7 +34,8 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    return [];
+    let newArray = arr.map(item => ({ name: item.name, isHungry: true, type: item.type })); 
+    return newArray;
 }
 
 /*
@@ -48,7 +49,8 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    return [];
+    let newArray = arr.map(item => ({ name: item.name.toUpperCase(), type: item.type }));
+    return newArray;
 }
 
 
