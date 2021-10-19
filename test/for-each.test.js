@@ -7,7 +7,7 @@ import {
 
 const { test, skip } = QUnit;
 
-skip('should make an array of names', (expect) => {
+test('should make an array of names', (expect) => {
     const pets = [
         {
             type: 'cat',
@@ -31,7 +31,7 @@ skip('should make an array of names', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a reverse array of type', (expect) => {
+test('should make a reverse array of type', (expect) => {
     const pets = [
         {
             type: 'cat',
