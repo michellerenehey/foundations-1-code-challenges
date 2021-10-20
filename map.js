@@ -23,6 +23,13 @@ export function makeArrayOfNamesWithMap(arr) {
     return newArray;
 }
 
+// another options: 
+// export function makeArrayOfNamesWithMap(arr){
+//     return arr.map((dog) => {
+//         return dog.name;
+//     });
+// }
+
 /*
 Output:
 
@@ -37,6 +44,13 @@ export function makeArrayWithIsHungry(arr) {
     let newArray = arr.map(item => ({ name: item.name, isHungry: true, type: item.type })); 
     return newArray;
 }
+
+// another option: 
+// export function makeArrayWithIsHungry(arr) {
+//     return arr.map((dog) => {
+//         return { ...dog, isHungry: true }; 
+//     }); 
+// }
 
 /*
 Output:
@@ -53,6 +67,12 @@ export function makeShoutingArray(arr) {
     return newArray;
 }
 
+// another option: 
+// export function makeShoutingArray(arr) {
+//     return arr.map((dog) => {
+//         return {name: dog.name.toUpperCase(), type: dog.type }
+//     })
+// }
 
 /*
 
@@ -64,6 +84,14 @@ export function makeStringArray(arr) {
     let newArray = arr.map(item => item.name + item.type);
     return newArray;
 }
+
+// another option
+// export function makeStringArray(arr) {
+//     return arr.map((dog) =>{
+//         - return Object.values(dog).join(''); 
+//         - return `${dog.name}${dog.type}`;
+//     })
+// }
 
 // [
 //     { name: 'spot', type: 'dog' },
@@ -95,8 +123,7 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
-//     let newArray = arr.map(item => 
-//         // use Object.entries(arr)) to get the arrays
-//     console.log(newArray);
-//     return [];
+    return arr.map((dog)=> {
+        return [['name', dog.name], ['type', dog.type]];
+    });
 }
