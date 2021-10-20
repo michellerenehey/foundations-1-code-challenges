@@ -96,9 +96,11 @@ Output:
 ['apple', 'banana']
 */
 
-// export function listNamesOfAllFruits(arr) {
-//     let newArray = arr.filter(item => {
-//         if(item.category === 'fruit'){
-//             newArray = item.id; 
-//         })
-//         return newArray
+export function listNamesOfAllFruits(arr) {
+    let newArray = arr.filter(item => {
+        if(item.category === 'fruit'){
+            return item;
+        }
+    }).map(item => item.id);
+    return newArray;
+} 
