@@ -94,9 +94,9 @@ Output:
     ]
 */
 
-// export function makeArrayOfArraysOfArrays(arr) {
+export function makeArrayOfArraysOfArrays(arr) {
 //     let newArray = arr.map(item => 
 //         // use Object.entries(arr)) to get the arrays
 //     console.log(newArray);
 //     return [];
-// }
+}

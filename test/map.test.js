@@ -4,7 +4,7 @@ import {
     makeArrayWithIsHungry,
     makeShoutingArray,
     makeStringArray,
-    // makeArrayOfArraysOfArrays
+    makeArrayOfArraysOfArrays
 } from '../map.js';
 
 const { test, skip } = QUnit;
