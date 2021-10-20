@@ -65,6 +65,13 @@ export function makeStringArray(arr) {
     return newArray;
 }
 
+// [
+//     { name: 'spot', type: 'dog' },
+//     { name: 'rover', type: 'dog' },
+//     { name: 'jumpy', type: 'frog' },
+//     { name: 'einstein', type: 'cat' },
+// ]
+
 /*
 Output:
 
@@ -87,6 +94,9 @@ Output:
     ]
 */
 
-export function makeArrayOfArraysOfArrays(arr) {
-    return [];
-}
+// export function makeArrayOfArraysOfArrays(arr) {
+//     let newArray = arr.map(item => 
+//         // use Object.entries(arr)) to get the arrays
+//     console.log(newArray);
+//     return [];
+// }
