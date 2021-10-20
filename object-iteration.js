@@ -24,7 +24,8 @@ etc
 */
 
 export function makeWeirdStringFromKeys(someObject) {
-    return '';
+    let newString = Object.keys(someObject).join(); 
+    return newString;
 }
 
 
@@ -38,8 +39,26 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
-    return {};
+    let objKeys = Object.keys(someObject); 
+    let objValues = Object.values(someObject); 
+    let newObject = {};
+    objKeys.forEach((key, i) => {
+        const newObjectKey = key.toUpperCase(); 
+        newObject[newObjectKey] = objValues[i]; 
+    }); 
+    return newObject;
 }
+
+// another option:
+// export function makeMoreScreamingKeys(someObject) {
+//     let newObj = {}; 
+//     let keys = Object.keys(someObject); 
+//     keys.forEach((key) => {
+//         let upperCaseKey = key.toUpperCase(); 
+//         newObj[upperCaseKey] = someObject[key];
+//     })
+//     return newObj;
+// }
 
 /*
 Output:
