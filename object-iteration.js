@@ -70,5 +70,7 @@ Output:
 */
 
 export function makeTuples(someObject) {
-    return [];
+    let newArray = []; 
+    newArray = Object.entries(someObject); 
+    return newArray;
 }
