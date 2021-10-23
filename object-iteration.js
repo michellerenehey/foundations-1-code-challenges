@@ -55,9 +55,17 @@ export function makeMoreScreamingKeys(someObject) {
 //     let keys = Object.keys(someObject); 
 //     keys.forEach((key) => {
 //         let upperCaseKey = key.toUpperCase(); 
-//         newObj[upperCaseKey] = someObject[key];
+//         newObj[upperCaseKey] = someObject[key]; // someObject[key] is the value
 //     })
 //     return newObj;
+// }
+
+// a third option: 
+// export function makeMoreSreamingKeys(someObject) {
+// for(let [key, value] of Object.entries(someObject)){
+//     makeMoreScreamingKeys[key.toUpperCase()] = value; 
+// }
+//     return makeMoreScreamingKeys;
 // }
 
 /*
